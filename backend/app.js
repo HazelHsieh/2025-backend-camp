@@ -49,7 +49,7 @@ app.use((err, req, res, next) => {
       status: 'failed',
       message: err.message
     })
-    return;
+    return
   }
   res.status(500).json({
     status: 'error',
